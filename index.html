@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivang Chordia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        main {
+            justify-content: center;
+            
+        }
+
+        body {
+            background-color: rgb(0, 3, 26);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: rgb(1, 45, 114);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(151, 151, 255);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.2rem;
+        }
+
+        .firstSection, .secondSection {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            padding-top: 50px;
+        }
+
+        .rightSection {
+            font-size: 3rem;
+
+        }
+
+        .purple {
+            color: rgb(204, 151, 254);
+        }
+        
+        #aboutMe {
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10%;
+            /* Applies a curved border to the image */
+        }
+
+        .image-with-shadow {
+            box-shadow: 10px 20px 40px 0 rgba(119, 0, 255, 0.762);
+            /* Add a shadow effect */
+        }
+
+        .SecondSectionContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .SleftSection {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .SrightSecond {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .secondSection>div>div{
+            margin-bottom: 15px;
+        }
+
+
+        h1 {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Shivang Chordia
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href=>Home</a></li>
+                    <li><a href="#aboutSection">About</a></li>
+                    <li><a href="\">Projects</a></li>
+                    <li><a href="\">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <img src="bg6.png" width="600px">
+            </div>
+            <div class="rightSection">
+                Hi, My name is <span class="purple">Shivang</span>
+                <div>and I am a passionate</div>
+                <span id="element" class="purple"></span>
+            </div>
+        </section>
+        <section class="secondSection">
+           >
+
+                <div class="SleftSection">
+                    <h1 id="aboutMe">1. About Me</h1><br><br>
+                    <img src="self3.jpg" class="image-with-shadow" style="height: 500px;">
+                </div>
+                <div class="SrightSecond">
+                    <div class="intro">I'm a Software Engineering Technology student at
+                        Conestoga College, currently embarking on an exciting journey in the realm of technology.
+                        Originally
+                        from Mumbai, India, I've found my academic home amidst the serene landscapes of Waterloo,
+                        Ontario,
+                        Canada, driven by an insatiable passion for all things tech.</div>
+
+                    <div class="skills">💻 Proficient in a range of programming languages such as C, C++, C#, HTML,
+                        JavaScript,
+                        and CSS, I've laid a sturdy groundwork in software development. My expertise extends to database
+                        management with MySQL and adept handling of version control using Git and GitHub. Navigating the
+                        intricacies of the .NET Framework while embracing Object-Oriented Programming (OOP) principles,
+                        I
+                        approach challenges with a solution-focused mindset.</div>
+
+                    <div class="aim">🚀 Beyond mastering code, my goal is to engineer solutions that make a meaningful
+                        impact in
+                        our ever-evolving technological landscape. I'm dedicated to leveraging my skills and knowledge
+                        to
+                        create
+                        innovations that transcend boundaries, making a tangible difference. Let's connect and explore
+                        the
+                        endless possibilities of tech-driven change together!</div>
+                </div>
+            
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+
+</html>
